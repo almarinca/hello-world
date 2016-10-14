@@ -31,47 +31,7 @@ public class TiendaMascotas {
 
         boolean Quit = false;
 
-        do {
-
-            Scanner Reader = new Scanner(System.in);
-
-            int Choose;
-
-            try {
-                Choose = Reader.nextInt();
-            } catch (Exception e) {
-                Choose = 0;
-            }
-
-            switch (Choose) {
-
-                case 1:
-                    Interfaz.PrintInfo(perro1);
-                    break;
-                case 2:
-                    Interfaz.PrintInfo(gato1);
-                    break;
-                case 3:
-                    Interfaz.PrintInfo(arana1);
-                    break;
-                case 4:
-                    Interfaz.PrintInfo(pez1);
-                    break;
-                case 5:
-                    Interfaz.PrintInfo(mono1);
-                    break;
-                case 6:
-                    Interfaz.PrintInfo(pajaro1);
-                    break;
-                case 7:
-                    Quit = true;
-                    break;
-                default:
-                    Interfaz.PrintError();
-                    break;
-
-            }
-        } while (!Quit);
+       
 
     }
 
